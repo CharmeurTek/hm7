@@ -44,15 +44,6 @@ const houses = [
       }
   }
 
-const displayCharacters = () => {
-  for(character of getCharacters(houseCode=valueHouse)) {
-    const elements = document.getElementById('characters');
-    var thecharacter = document.createElement('li');
-    thecharacter.text = "hugo";
-    elements.appendChild(thecharacter);
-  }
-}
-
 addValueOnSelect();
 
 document.getElementById("house").addEventListener("change", e => {
